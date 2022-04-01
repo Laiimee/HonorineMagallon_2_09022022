@@ -1,0 +1,38 @@
+
+body{
+  margin: 0;
+}
+
+body,
+h2 {
+  font-family: Roboto, Arial, Sans Serif;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  margin: 0 0 $pouce*2 0;
+  font-size: 2em;
+  font-family: Shrikhand, Arial, Sans Serif;
+}
+h3{
+  margin: $pouce 0;
+}
+* {
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+span{
+  color: $grey-dark;
+  font-weight: 300;
+}
+
+.text{
+  margin: 0 0 0 $pouce;
+}

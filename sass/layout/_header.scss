@@ -1,0 +1,25 @@
+/* Header */
+header{
+  display: flex;
+  flex-direction: column;
+  .brand{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: $pouce*2;
+  }
+  .brand__icon{
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .localisation {
+    display: flex;
+    justify-content: center;
+    background-color: $grey-medium;
+  }
+}

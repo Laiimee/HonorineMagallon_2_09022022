@@ -1,0 +1,16 @@
+{
+  "name": "writing-sass",
+  "version": "1.0.0",
+  "description": "P(3) openclassroom",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/base/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Laiimee/HonorineMagallon_3_09022022.git"
+  },
+  "author": "Laiimee",
+  "license": "ISC",
+}

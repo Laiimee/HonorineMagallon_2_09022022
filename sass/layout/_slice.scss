@@ -1,0 +1,101 @@
+  
+  
+  section.slice{
+    .content:first-child{
+      display: flex;
+      padding: $pouce*4;
+      max-width: 1250px;
+      margin: 0 auto;
+    }
+  }
+  
+  section.explorer{
+    background-color: $grey-light;
+    height: auto;
+    text-align: center;
+
+    .content{
+      flex-direction: column;
+      span{
+        margin-bottom: $pouce*2;
+      }
+    }
+  }
+
+  .btn__explorer{
+    background: linear-gradient($brand-pink,$brand-purple);
+    color: $white;
+    margin: 0 auto;
+    border-radius: $border-radius*6;
+    padding: $pouce*1.5;
+    width: 250px;
+  }
+  .btn__explorer:hover{
+    background: linear-gradient($brand-purple,$brand-pink);
+  }
+
+
+  section.restaurants{
+    background-color: $grey-medium;
+    .content{
+      flex-direction: column;
+      .form__rest{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+
+        .container{
+          width: 33%;
+          display: flex;
+          flex-direction: column;
+          padding: $pouce;
+
+          .rest__pict{
+            border-radius: $border-radius $border-radius 0 0;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            overflow: hidden;
+            img{
+              height: 100%;
+              &.portrait{
+                width: inherit;
+                height: 100% !important;
+                object-fit: cover;
+              }
+            }
+          }
+          .rest__info{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: #fff;
+            border-radius: 0 0 $border-radius $border-radius;
+
+            .text{
+              width: 80%;
+            }
+          }
+        }
+
+        label.new{
+          color: $brand-green;
+          background-color: $brand-green-light;
+          font-weight: bold;
+          padding: $pouce;
+          position: relative;
+          top: -175px;
+          right: -182px;
+        }
+      }
+    }
+
+ /*    img{
+      width: 100px;
+      height: auto;
+    } */
+  }
+
+
+
