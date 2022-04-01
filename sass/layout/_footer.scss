@@ -1,1 +1,14 @@
 /* Footer */
+#footer{
+  background-color: $grey-dark;
+  color: #fff;
+  
+  .content{
+    flex-direction: column;
+  }
+
+  .nav__footer{
+    color: #fff;
+    margin: 0;
+  }
+}
