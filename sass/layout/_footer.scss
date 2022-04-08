@@ -10,5 +10,33 @@
   .nav__footer{
     color: #fff;
     margin: 0;
+    padding: 0;
+
+    li{
+      line-height: normal;
+      margin: $pouce 0;
+      cursor: pointer;
+
+      .text, a{
+        color: $white;
+      }
+      &:hover{
+        color: $brand-purple;
+      }
+    }
+
+  }
+
+  .icon{
+    color: #fff;
+  }
+
+  #brand__footer{
+    object-fit: cover;
+    overflow: hidden;
+    width: 250px;
+    img.brand__picture{
+      width: 100%;
+    }
   }
 }

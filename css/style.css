@@ -10,42 +10,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.main__btn {
-  background: linear-gradient(165deg, #ff79da, #9356dc);
-  font-size: 1.1em;
-  color: white;
-  border: none;
-  padding: 20px;
-  margin: 10px 0 40px 0;
-  border-radius: 30px;
-  box-shadow: 0px 5px 4px #cdcbcb;
-}
-.main__btn:hover {
-  box-shadow: 0px 5px 1px #cdcbcb;
-  filter: brightness(110%);
-}
-
-.command__btn {
-  display: flex;
-  justify-content: center;
-}
-.command__btn .main__btn-modifier {
-  padding: 10px 40px 10px 40px;
-  margin: 0 0 60px 0;
-}
-.command__btn .main__btn-modifier:hover {
-  box-shadow: 0px 5px 1px #cdcbcb;
-  filter: brightness(110%);
-}
-
-@media (min-width: 769px) {
-  .full__menu {
-    width: 100%;
-  }
-  .full__menu .command__btn {
-    display: block;
-  }
-}
 /* Footer */
 #footer {
   background-color: #353535;
@@ -57,6 +21,29 @@
 #footer .nav__footer {
   color: #fff;
   margin: 0;
+  padding: 0;
+}
+#footer .nav__footer li {
+  line-height: normal;
+  margin: 11px 0;
+  cursor: pointer;
+}
+#footer .nav__footer li .text, #footer .nav__footer li a {
+  color: #fff;
+}
+#footer .nav__footer li:hover {
+  color: #9356DC;
+}
+#footer .icon {
+  color: #fff;
+}
+#footer #brand__footer {
+  object-fit: cover;
+  overflow: hidden;
+  width: 250px;
+}
+#footer #brand__footer img.brand__picture {
+  width: 100%;
 }
 
 /* Header */
@@ -128,25 +115,25 @@ span {
   margin: 0 0 0 11px;
 }
 
-nav {
+section.nav nav {
   width: 100%;
 }
-nav ul {
+section.nav nav ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin: 0 22px;
+  width: 100%;
 }
-nav ul li {
+section.nav nav ul li {
   display: flex;
   flex-direction: row;
   vertical-align: baseline;
   width: 100%;
   margin: 22px 0;
 }
-nav .step {
+section.nav nav .step {
   align-self: center;
   background-color: #9356DC;
   border-radius: 100%;
@@ -158,7 +145,7 @@ nav .step {
   position: relative;
   left: 11px;
 }
-nav .btn__nav {
+section.nav nav .btn__nav {
   font-style: normal;
   background-color: #F6F6F6;
   border-radius: 12px;
@@ -166,12 +153,17 @@ nav .btn__nav {
   width: 100%;
   padding: 44px;
 }
-nav .btn__nav:hover {
+section.nav nav .btn__nav:hover {
   background-color: #F5EDFF;
 }
 
+/* @media screen and (min-with:950px){
+
+} */
 @media (min-with: 350px) and (max-width: 950px) {
-  nav ul {
+  section.nav nav ul {
+    width: 100%;
+    flex-wrap: nowrap !important;
     flex-direction: column !important;
   }
 }
@@ -240,8 +232,7 @@ section.restaurants .content .form__rest .container .rest__pict img {
   width: 100%;
 }
 section.restaurants .content .form__rest .container .rest__pict img.portrait {
-  width: inherit;
-  height: 100% !important;
+  width: 100%;
   object-fit: cover;
 }
 section.restaurants .content .form__rest .container .rest__info {
@@ -259,10 +250,29 @@ section.restaurants .content .form__rest label.new {
   color: #008766;
   background-color: #99E2D0;
   font-weight: bold;
+  text-align: center;
+  width: 100px;
   padding: 11px;
   position: relative;
-  top: -175px;
-  right: -182px;
+  top: 53px;
+  right: -28em;
+  float: right;
+}
+section.restaurants .content .form__rest .icon__fav {
+  font-size: 1.3em;
+  position: relative;
+  top: 10px;
+}
+section.restaurants .content .form__rest .icon__fav:hover {
+  color: #9356DC;
+}
+
+@media (min-with: 350px) and (max-width: 950px) {
+  section.restaurants label.new {
+    position: relative;
+    top: -175px;
+    right: -182px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

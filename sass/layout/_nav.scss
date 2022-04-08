@@ -1,55 +1,67 @@
-nav{ 
-    width: 100%;
-    ul{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        margin: 0 $pouce*2;
-        li{
-          display: flex;
-          flex-direction: row;
-          vertical-align: baseline;
-          width: 100%;
-          margin: $pouce*2 0; 
-        }
-      }
 
-    .step{
-        align-self: center;
-        background-color: $brand-purple;
-        border-radius: 100%;
-        color: #fff;
-        width: 30px;
-        height: 30px;
-        text-align: center;
-        padding: $pouce*0.55;
-
-        position: relative;
-        left: 11px;
-
-    }
-      
-    .btn__nav{
-        font-style: normal;
-        background-color: $grey-light;
-        border-radius: $border-radius;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+section.nav{
+    nav{ 
         width: 100%;
-        padding: $pouce*4;
-
-        &:hover{
-            background-color: $brand-purple-light;
+        ul{
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 100%;
+            li{
+              display: flex;
+              flex-direction: row;
+              vertical-align: baseline;
+              width: 100%;
+              margin: $pouce*2 0; 
+            }
+          }
+    
+        .step{
+            align-self: center;
+            background-color: $brand-purple;
+            border-radius: 100%;
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            padding: $pouce*0.55;
+    
+            position: relative;
+            left: 11px;
+    
+        }
+          
+        .btn__nav{
+            font-style: normal;
+            background-color: $grey-light;
+            border-radius: $border-radius;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            width: 100%;
+            padding: $pouce*4;
+    
+            &:hover{
+                background-color: $brand-purple-light;
+            }
         }
     }
 }
 
 
+
+/* @media screen and (min-with:950px){
+  
+} */
+
 @media (min-with:350px)and(max-width:950px){
-    nav{
-        ul{
-            flex-direction: column !important;
+    section.nav{
+        nav{
+            ul{
+                width: 100%;
+                flex-wrap: nowrap !important;
+                flex-direction: column !important;
+            }
         }
     }
 }

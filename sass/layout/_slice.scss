@@ -60,8 +60,7 @@
             img{
               width: 100%;
               &.portrait{
-                width: inherit;
-                height: 100% !important;
+                width: 100%;
                 object-fit: cover;
               }
             }
@@ -84,10 +83,21 @@
           color: $brand-green;
           background-color: $brand-green-light;
           font-weight: bold;
+          text-align: center;
+          width: 100px;
           padding: $pouce;
           position: relative;
-          top: -175px;
-          right: -182px;
+          top: 53px;
+          right: -28em;
+          float: right;
+        }
+        .icon__fav{
+          font-size: 1.3em;
+          position: relative;
+          top: 10px;
+          &:hover{
+            color: $brand-purple;
+          }
         }
       }
     }
@@ -97,6 +107,16 @@
       height: auto;
     } */
   }
+
+  @media (min-with:350px)and(max-width:950px){
+    section.restaurants{
+      label.new{
+        position: relative;
+        top: -175px;
+        right: -182px;
+      }
+    }
+}
 
 
 

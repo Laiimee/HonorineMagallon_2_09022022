@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/33080b6594.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Pouet pouet</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://kit.fontawesome.com/33080b6594.js" crossorigin="anonymous"></script>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+        <link rel="stylesheet" href="css/style.css">
+        <title>Ohmyfood</title>
+    </head>
+    
+    <body>
+    
+          
+    <!-- En-tête de la page -->
+    <header>
+        <div class="brand">
+            <a href="index.html"><img class="brand__icon" src="css//img/logo/ohmyfood.png" alt="OhMyFood"></a>
+        </div>
+        <div class="localisation">
+                <h3><span class="icon"> <i class="fas fa-map-marker-alt fa-sm"></i></span><span class="text">Paris, Belleville</span></h3>
+        </div>
+    </header
 
 <body>
 
@@ -157,23 +173,27 @@
                     <button class="main__btn main__btn-modifier" type="button">Commander</button>
                 </div>
         </section>
-
-        <!-- Footer -->
-        <footer>
-            <div class="block__footer">
-                <h3>ohmyfood</h3>
-                <div class="add__restaurant">
-                    <i class="fas fa-utensils ustensils"></i>
-                    <p>Proposer un restaurant</p>
+            
+<!-- Footer -->
+<footer id="footer">
+    <section class="slice">
+        <div class="content">
+                <div id="brand__footer">
+                    <a class="brand" href="index.html">
+                        <img class="brand" src="css/img/logo/ohmyfood.png" alt="OhMyFood">
+                    </a>
                 </div>
-                <div class="partnership">
-                    <i class="fas fa-hands-helping handshake"></i>
-                    <p>Devenir partenaire</p>
-                </div>
-                <p>Mentions légales</p>
-                <div class="contact"><a href="mailto:contact@ohmyfood.fr">Contact</a></div>
-            </div>
-        </footer>
+                <nav>
+                    <ul class="nav__footer">
+                        <li><span class="icon"><i class="fas fa-utensils ustensils"></i></span><span class="text">un restaurant</span></li>
+                        <li><span class="icon"><i class="fas fa-hands-helping handshake"></i></span class="text"><span></span>Devenir partenaire</li>
+                        <li>Mentions légales</li>
+                        <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </section>
+</footer>
     </div>
 
 </body>
