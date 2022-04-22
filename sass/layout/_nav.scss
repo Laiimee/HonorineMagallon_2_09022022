@@ -4,7 +4,7 @@ section.nav{
         width: 100%;
         ul{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             margin: 0;
             padding: 0;
             list-style: none;
@@ -13,7 +13,6 @@ section.nav{
               display: flex;
               flex-direction: row;
               vertical-align: baseline;
-              width: 100%;
               margin: $pouce*2 0; 
             }
           }
@@ -27,10 +26,8 @@ section.nav{
             height: 30px;
             text-align: center;
             padding: $pouce*0.55;
-    
             position: relative;
             left: 11px;
-    
         }
           
         .btn__nav{
@@ -39,7 +36,8 @@ section.nav{
             border-radius: $border-radius;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             width: 100%;
-            padding: $pouce*4;
+            padding: $pouce*2;
+            white-space: nowrap;
     
             &:hover{
                 background-color: $brand-purple-light;
@@ -49,18 +47,22 @@ section.nav{
 }
 
 
+@media (min-width:1100px) {
+    section.nav{
+        nav{
+            ul{
+                flex-direction: column;
+            }
+        }
+    }
+}
 
-/* @media screen and (min-with:950px){
-  
-} */
-
-@media (min-with:350px)and(max-width:950px){
+@media (min-with:300px)and(max-width:950px){
     section.nav{
         nav{
             ul{
                 width: 100%;
-                flex-wrap: nowrap !important;
-                flex-direction: column !important;
+                flex-direction: column;
             }
         }
     }

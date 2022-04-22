@@ -1,0 +1,40 @@
+.btn{
+    display: flex;
+    background: linear-gradient($brand-pink,$brand-purple);
+    color: $white;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: $border-radius*6;
+    border: none;
+    padding: $pouce*1.5;
+    width: 250px;
+    cursor: pointer;
+  }
+  .btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .icon__fav{
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    .logo__heart{
+      margin: 0 $pouce;                   
+      &:hover{
+        transition: all 0.5s ease-out;
+        opacity: 1;
+        color: transparent;
+        font-weight: bold;
+        background: linear-gradient(to left, $brand-purple, $brand-pink);
+        background: -webkit-linear-gradient(to left, $brand-purple, $brand-pink);
+        -webkit-background-clip: text;
+      }
+    }
+  }
+
+  .back__arrow{
+    .fa-arrow-left:hover{
+      color: $brand-purple;
+
+    }
+  }
