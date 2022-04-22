@@ -146,6 +146,36 @@ section.explorer{
             padding: $pouce;
             width: 100%;
             height: 63px;
+            animation-name: choices;
+            animation-fill-mode: forwards;
+            animation-duration: 1s;
+            transition-duration: 1s;
+            position: relative;
+            opacity: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            &.meal__01 {
+              animation-delay: 0.5s;
+            }
+              &.meal__02 {
+              animation-delay: 0.10s;
+            }
+            &.meal__03 {
+              animation-delay: 0.15s;
+            }
+            &.meal__04 {
+              animation-delay: 0.20s;
+            }
+            @keyframes choices {
+              from {
+                bottom: -30px;
+              }
+              to {
+                opacity: 1;
+                bottom: 0px;
+              }
+            }
             &:hover,:focus {
               padding-right: 50px;
               .check__hidden {
@@ -173,6 +203,7 @@ section.explorer{
                 > span:first-child{
                   white-space: nowrap;
                   overflow: hidden;
+                  text-overflow: ellipsis;
                   padding: 0 $pouce 0 0;
                   width: 100%;
                 }
