@@ -15,9 +15,10 @@
   }
 
   .icon__fav{
-    font-size: 1.3em;
-    display: flex;
     align-items: center;
+    display: flex;
+    cursor: pointer;
+    font-size: 1.3em;
     .logo__heart{
       margin: 0 $pouce;                   
       &:hover{

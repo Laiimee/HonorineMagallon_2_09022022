@@ -136,6 +136,7 @@ section.explorer{
           
           li{
             display: flex;
+            cursor: pointer;
             flex-direction: row;
             justify-content: space-between;
             background-color: $white;
@@ -144,16 +145,16 @@ section.explorer{
             margin: $pouce $pouce*2 $pouce 0;
             padding: $pouce;
             width: 100%;
-
-              /* animation-name: choices;
-            animation-fill-mode: forwards;
-            animation-duration: 1s;
-            transition-duration: 1s;
-            position: relative;
-            opacity: 0;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden; */
+            height: 63px;
+            &:hover,:focus {
+              padding-right: 50px;
+              .check__hidden {
+                opacity: 1;
+                transform: translate(-50px);
+                transform: scale(1);
+                animation: check_rotating 0.4s linear;
+              }
+            }
             .meal__select{
               position: relative;
               width: 100%;
@@ -169,6 +170,12 @@ section.explorer{
                 display: inline-flex;
                 justify-content: space-between;
                 width: 100%;
+                > span:first-child{
+                  white-space: nowrap;
+                  overflow: hidden;
+                  padding: 0 $pouce 0 0;
+                  width: 100%;
+                }
                 .price{
                   font-size: 1em;
                   font-weight: bold;
@@ -185,12 +192,13 @@ section.explorer{
               color: #fff;
               width: 50px;
               height: 63px;
- /*              padding: $pouce*2; */
+ /*           padding: $pouce*2; */
               position: absolute;
               top: -11px;
               right: -51px;
-/*               opacity: 0;
-              transition: transform 500ms ease-in-out; */
+              opacity: 0;
+              transition: transform 530ms ease-in-out;
+
               .fa-check-circle{
                 color: #fff;
                 font-size: 1.2em;
