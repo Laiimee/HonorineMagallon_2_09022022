@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Shrikhand";
-  src: url("public/police/Shrikhand-Regular.otf") format("opentype");
+  src: url("css/police/Shrikhand-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("public/police/Roboto-Regular.ttf") format("truetype");
+  src: url("css/police/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -52,8 +52,6 @@
 
 /* Footer */
 #footer {
-  /* position: absolute;
-  bottom: 0; */
   width: 100%;
   background-color: #353535;
   color: #fff;
@@ -71,10 +69,22 @@
   margin: 11px 0;
   cursor: pointer;
 }
-#footer .nav__footer li .text, #footer .nav__footer li a {
+#footer .nav__footer li:hover {
+  color: #9356DC !important;
+}
+#footer .nav__footer li .text {
   color: #fff;
 }
-#footer .nav__footer li:hover {
+#footer .nav__footer li .text:hover {
+  color: #9356DC;
+}
+#footer .nav__footer li > a {
+  color: #fff;
+}
+#footer .nav__footer li a:hover {
+  color: #9356DC;
+}
+#footer .nav__footer li > .icon:hover {
   color: #9356DC;
 }
 #footer .icon {
@@ -140,8 +150,8 @@ h2 {
 h1 {
   text-align: center;
   margin: 22px 0;
-  font-size: em;
-  font-family: Shrikhand, Arial, Sans Serif;
+  font-size: 1.5em;
+  font-family: "Shrikhand", cursive;
 }
 
 h3 {
@@ -238,6 +248,9 @@ section.explorer {
   height: auto;
   text-align: center;
 }
+section.explorer .content h1 {
+  font-family: Roboto, Arial, Sans Serif;
+}
 section.explorer .content span {
   margin-bottom: 22px;
 }
@@ -252,11 +265,13 @@ section.restaurants .content .form__rest {
   margin: 0;
 }
 section.restaurants .content .form__rest .container {
-  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 11px;
   position: relative;
+  width: 100%;
+  max-height: 250px;
+  height: 100%;
 }
 section.restaurants .content .form__rest .container .rest__pict {
   border-radius: 12px 12px 0 0;
@@ -358,11 +373,11 @@ section.slice.menu .form__meal .meal ul li {
   background-color: #fff;
   border-radius: 6px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  margin: 11px 22px 11px 0;
+  margin: 11px 0;
   padding: 11px;
   width: 100%;
   height: 63px;
-  animation-name: choices;
+  animation-name: appearance;
   animation-fill-mode: forwards;
   animation-duration: 1s;
   transition-duration: 1s;
@@ -372,25 +387,25 @@ section.slice.menu .form__meal .meal ul li {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-section.slice.menu .form__meal .meal ul li.meal__01 {
+section.slice.menu .form__meal .meal ul li .meal__01 {
   animation-delay: 0.5s;
 }
-section.slice.menu .form__meal .meal ul li.meal__02 {
+section.slice.menu .form__meal .meal ul li .meal__02 {
   animation-delay: 0.1s;
 }
-section.slice.menu .form__meal .meal ul li.meal__03 {
+section.slice.menu .form__meal .meal ul li .meal__03 {
   animation-delay: 0.15s;
 }
-section.slice.menu .form__meal .meal ul li.meal__04 {
+section.slice.menu .form__meal .meal ul li .meal__04 {
   animation-delay: 0.2s;
 }
-@keyframes choices {
+@keyframes appearance {
   from {
     bottom: -30px;
   }
   to {
     opacity: 1;
-    bottom: 0px;
+    bottom: 0;
   }
 }
 section.slice.menu .form__meal .meal ul li:hover, section.slice.menu .form__meal .meal ul li :focus {
@@ -400,14 +415,25 @@ section.slice.menu .form__meal .meal ul li:hover .check__hidden, section.slice.m
   opacity: 1;
   transform: translate(-50px);
   transform: scale(1);
+}
+section.slice.menu .form__meal .meal ul li:hover .fa-check-circle, section.slice.menu .form__meal .meal ul li :focus .fa-check-circle {
   animation: check_rotating 0.4s linear;
+}
+@keyframes check_rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 section.slice.menu .form__meal .meal ul li .meal__select {
   position: relative;
   width: 100%;
 }
 section.slice.menu .form__meal .meal ul li .meal__select .meal__title h3 {
-  font-size: 1em;
+  font-size: 0.9em;
+  text-overflow: ellipsis;
 }
 section.slice.menu .form__meal .meal ul li .meal__select .meal__title span {
   font-size: 0.8em;
@@ -438,7 +464,6 @@ section.slice.menu .form__meal .meal ul li .check__hidden {
   color: #fff;
   width: 50px;
   height: 63px;
-  /*           padding: $pouce*2; */
   position: absolute;
   top: -11px;
   right: -51px;
@@ -451,51 +476,15 @@ section.slice.menu .form__meal .meal ul li .check__hidden .fa-check-circle {
   vertical-align: middle;
 }
 
-@media screen and (min-with: 350px) and (max-width: 950px) {
-  section.restaurants .content {
-    padding: 0 !important;
-  }
+@media screen and (min-width: 750px) {
   section.restaurants .content .form__rest {
-    flex-wrap: nowrap !important;
-    flex-direction: column !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   section.restaurants .content .form__rest .container {
-    width: 100%;
-  }
-
-  section.menu .form__meal .meal ul {
-    display: flex;
-    flex-wrap: nowrap !important;
-    flex-direction: column !important;
-  }
-  section.menu .form__meal .meal ul li {
-    width: 100% !important;
-  }
-}
-@media screen and (min-with: 950px) {
-  .form__meal {
-    display: flex;
-    flex-direction: column;
-  }
-  .form__meal .meal {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .form__meal .meal ul {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 11px 11px 11px 0;
-    padding: 0;
-  }
-  .form__meal .meal ul li {
-    width: 31%;
-  }
-}
-@media screen and (min-with: 1250px) {
-  section.restaurants .content .form__rest label.new {
-    right: -90% !important;
+    max-height: 350px !important;
+    width: 50% !important;
   }
 }
 

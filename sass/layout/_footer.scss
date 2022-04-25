@@ -1,7 +1,5 @@
 /* Footer */
 #footer{
-  /* position: absolute;
-  bottom: 0; */
   width: 100%;
   background-color: $grey-dark;
   color: #fff;
@@ -19,11 +17,23 @@
       line-height: normal;
       margin: $pouce 0;
       cursor: pointer;
-
-      .text, a{
-        color: $white;
-      }
       &:hover{
+        color: $brand-purple !important
+      }
+
+      .text{
+        color: $white;
+        &:hover{
+          color: $brand-purple;
+        }
+      }
+      > a{
+        color: #fff;
+      }   
+      a:hover{
+        color: $brand-purple;
+      }
+      > .icon:hover{
         color: $brand-purple;
       }
     }
