@@ -182,10 +182,10 @@ span {
   margin: 0 0 0 11px;
 }
 
-section.nav nav {
+.nav nav {
   width: 100%;
 }
-section.nav nav ul {
+.nav nav ul {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -193,13 +193,13 @@ section.nav nav ul {
   list-style: none;
   width: 100%;
 }
-section.nav nav ul li {
+.nav nav ul li {
   display: flex;
   flex-direction: row;
   vertical-align: baseline;
   margin: 22px 0;
 }
-section.nav nav .step {
+.nav nav .step {
   align-self: center;
   background-color: #9356DC;
   border-radius: 100%;
@@ -211,7 +211,7 @@ section.nav nav .step {
   position: relative;
   left: 11px;
 }
-section.nav nav .btn__nav {
+.nav nav .btn__nav {
   font-style: normal;
   background-color: #F6F6F6;
   border-radius: 12px;
@@ -220,22 +220,22 @@ section.nav nav .btn__nav {
   padding: 22px;
   white-space: nowrap;
 }
-section.nav nav .btn__nav:hover {
+.nav nav .btn__nav:hover {
   background-color: #F5EDFF;
 }
 
 @media (min-width: 1100px) {
-  section.nav nav ul {
+  .nav nav ul {
     flex-direction: column;
   }
 }
 @media (min-with: 300px) and (max-width: 950px) {
-  section.nav nav ul {
+  .nav nav ul {
     width: 100%;
     flex-direction: column;
   }
 }
-section.slice .content:first-child {
+.slice .content:first-child {
   display: flex;
   flex-direction: column;
   padding: 22px;
@@ -243,28 +243,28 @@ section.slice .content:first-child {
   margin: 0 auto;
 }
 
-section.explorer {
+.explorer {
   background-color: #F6F6F6;
   height: auto;
   text-align: center;
 }
-section.explorer .content h1 {
+.explorer .content h1 {
   font-family: Roboto, Arial, Sans Serif;
 }
-section.explorer .content span {
+.explorer .content span {
   margin-bottom: 22px;
 }
 
-section.restaurants {
+.restaurants {
   background-color: #EAEAEA;
 }
-section.restaurants .content .form__rest {
+.restaurants .content .form__rest {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin: 0;
 }
-section.restaurants .content .form__rest .container {
+.restaurants .content .form__rest .container {
   display: flex;
   flex-direction: column;
   padding: 11px;
@@ -273,21 +273,21 @@ section.restaurants .content .form__rest .container {
   max-height: 250px;
   height: 100%;
 }
-section.restaurants .content .form__rest .container .rest__pict {
+.restaurants .content .form__rest .container .rest__pict {
   border-radius: 12px 12px 0 0;
   width: 100%;
   height: 200px;
   object-fit: cover;
   overflow: hidden;
 }
-section.restaurants .content .form__rest .container .rest__pict img {
+.restaurants .content .form__rest .container .rest__pict img {
   width: 100%;
 }
-section.restaurants .content .form__rest .container .rest__pict img.portrait {
+.restaurants .content .form__rest .container .rest__pict img.portrait {
   width: 100%;
   object-fit: cover;
 }
-section.restaurants .content .form__rest .container .rest__info {
+.restaurants .content .form__rest .container .rest__info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -295,10 +295,10 @@ section.restaurants .content .form__rest .container .rest__info {
   border-radius: 0 0 12px 12px;
   padding: 11px 0;
 }
-section.restaurants .content .form__rest .container .rest__info .text {
+.restaurants .content .form__rest .container .rest__info .text {
   width: 80%;
 }
-section.restaurants .content .form__rest label.new {
+.restaurants .content .form__rest .new {
   color: #008766;
   background-color: #99E2D0;
   font-weight: bold;
@@ -310,15 +310,15 @@ section.restaurants .content .form__rest label.new {
   right: 5%;
 }
 
-section.slice.menu {
+.slice.menu {
   margin: 0;
 }
-section.slice.menu .content {
+.slice.menu .content {
   margin: 0;
   padding: 0;
   max-width: none;
 }
-section.slice.menu .content .background__retaurants {
+.slice.menu .content .background__retaurants {
   margin: 0;
   padding-bottom: 0;
   width: 100%;
@@ -326,31 +326,31 @@ section.slice.menu .content .background__retaurants {
   object-fit: cover;
   overflow: hidden;
 }
-section.slice.menu .content .background__retaurants img {
+.slice.menu .content .background__retaurants img {
   width: 100%;
 }
-section.slice.menu form {
+.slice.menu form {
   background-color: #fff;
   margin: -60px 0 0 0;
   border-radius: 48px 48px 0 0;
   padding: 22px;
   width: 100%;
 }
-section.slice.menu form header {
+.slice.menu form header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-section.slice.menu .form__meal {
+.slice.menu .form__meal {
   display: flex;
   flex-direction: column;
 }
-section.slice.menu .form__meal .meal {
+.slice.menu .form__meal .meal {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-section.slice.menu .form__meal .meal h2 {
+.slice.menu .form__meal .meal h2 {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1em;
@@ -358,14 +358,14 @@ section.slice.menu .form__meal .meal h2 {
   padding-bottom: 8.25px;
   width: 50px;
 }
-section.slice.menu .form__meal .meal ul {
+.slice.menu .form__meal .meal ul {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   margin: 11px 11px 11px 0;
   padding: 0;
 }
-section.slice.menu .form__meal .meal ul li {
+.slice.menu .form__meal .meal ul li {
   display: flex;
   cursor: pointer;
   flex-direction: row;
@@ -387,16 +387,16 @@ section.slice.menu .form__meal .meal ul li {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-section.slice.menu .form__meal .meal ul li .meal__01 {
+.slice.menu .form__meal .meal ul li .meal__01 {
   animation-delay: 0.5s;
 }
-section.slice.menu .form__meal .meal ul li .meal__02 {
+.slice.menu .form__meal .meal ul li .meal__02 {
   animation-delay: 0.1s;
 }
-section.slice.menu .form__meal .meal ul li .meal__03 {
+.slice.menu .form__meal .meal ul li .meal__03 {
   animation-delay: 0.15s;
 }
-section.slice.menu .form__meal .meal ul li .meal__04 {
+.slice.menu .form__meal .meal ul li .meal__04 {
   animation-delay: 0.2s;
 }
 @keyframes appearance {
@@ -408,15 +408,15 @@ section.slice.menu .form__meal .meal ul li .meal__04 {
     bottom: 0;
   }
 }
-section.slice.menu .form__meal .meal ul li:hover, section.slice.menu .form__meal .meal ul li :focus {
+.slice.menu .form__meal .meal ul li:hover, .slice.menu .form__meal .meal ul li :focus {
   padding-right: 50px;
 }
-section.slice.menu .form__meal .meal ul li:hover .check__hidden, section.slice.menu .form__meal .meal ul li :focus .check__hidden {
+.slice.menu .form__meal .meal ul li:hover .check__hidden, .slice.menu .form__meal .meal ul li :focus .check__hidden {
   opacity: 1;
   transform: translate(-50px);
   transform: scale(1);
 }
-section.slice.menu .form__meal .meal ul li:hover .fa-check-circle, section.slice.menu .form__meal .meal ul li :focus .fa-check-circle {
+.slice.menu .form__meal .meal ul li:hover .fa-check-circle, .slice.menu .form__meal .meal ul li :focus .fa-check-circle {
   animation: check_rotating 0.4s linear;
 }
 @keyframes check_rotating {
@@ -427,35 +427,35 @@ section.slice.menu .form__meal .meal ul li:hover .fa-check-circle, section.slice
     transform: rotate(360deg);
   }
 }
-section.slice.menu .form__meal .meal ul li .meal__select {
+.slice.menu .form__meal .meal ul li .meal__select {
   position: relative;
   width: 100%;
 }
-section.slice.menu .form__meal .meal ul li .meal__select .meal__title h3 {
+.slice.menu .form__meal .meal ul li .meal__select .meal__title h3 {
   font-size: 0.9em;
   text-overflow: ellipsis;
 }
-section.slice.menu .form__meal .meal ul li .meal__select .meal__title span {
+.slice.menu .form__meal .meal ul li .meal__select .meal__title span {
   font-size: 0.8em;
 }
-section.slice.menu .form__meal .meal ul li .meal__select .meal__price {
+.slice.menu .form__meal .meal ul li .meal__select .meal__price {
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
 }
-section.slice.menu .form__meal .meal ul li .meal__select .meal__price > span:first-child {
+.slice.menu .form__meal .meal ul li .meal__select .meal__price > span:first-child {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0 11px 0 0;
   width: 100%;
 }
-section.slice.menu .form__meal .meal ul li .meal__select .meal__price .price {
+.slice.menu .form__meal .meal ul li .meal__select .meal__price .price {
   font-size: 1em;
   font-weight: bold;
   padding: 0 11px 0 0;
 }
-section.slice.menu .form__meal .meal ul li .check__hidden {
+.slice.menu .form__meal .meal ul li .check__hidden {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -470,19 +470,19 @@ section.slice.menu .form__meal .meal ul li .check__hidden {
   opacity: 0;
   transition: transform 530ms ease-in-out;
 }
-section.slice.menu .form__meal .meal ul li .check__hidden .fa-check-circle {
+.slice.menu .form__meal .meal ul li .check__hidden .fa-check-circle {
   color: #fff;
   font-size: 1.2em;
   vertical-align: middle;
 }
 
 @media screen and (min-width: 750px) {
-  section.restaurants .content .form__rest {
+  .restaurants .content .form__rest {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  section.restaurants .content .form__rest .container {
+  .restaurants .content .form__rest .container {
     max-height: 350px !important;
     width: 50% !important;
   }

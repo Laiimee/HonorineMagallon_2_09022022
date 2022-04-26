@@ -1,5 +1,5 @@
 
-section.nav{
+.nav{
     nav{ 
         width: 100%;
         ul{
@@ -48,7 +48,7 @@ section.nav{
 
 
 @media (min-width:1100px) {
-    section.nav{
+    .nav{
         nav{
             ul{
                 flex-direction: column;
@@ -58,7 +58,7 @@ section.nav{
 }
 
 @media (min-with:300px)and(max-width:950px){
-    section.nav{
+    .nav{
         nav{
             ul{
                 width: 100%;

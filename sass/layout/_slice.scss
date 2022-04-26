@@ -1,6 +1,6 @@
   
   
-section.slice{
+.slice{
   .content:first-child{
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@ section.slice{
   }
 }
   
-section.explorer{
+.explorer{
   background-color: $grey-light;
   height: auto;
   text-align: center;
@@ -25,7 +25,7 @@ section.explorer{
   }
 }
 
-  section.restaurants{
+  .restaurants{
     background-color: $grey-medium;
     .content{
       .form__rest{
@@ -71,7 +71,7 @@ section.explorer{
           }
         }
 
-        label.new{
+        .new{
           color: $brand-green;
           background-color: $brand-green-light;
           font-weight: bold;
@@ -86,7 +86,7 @@ section.explorer{
     }
   } 
 
-  section.slice.menu{
+  .slice.menu{
     margin: 0;
     .content{
       margin: 0;
@@ -261,7 +261,7 @@ section.explorer{
 // MEDIA QUERY//
 
 @media screen and (min-width:750px) {
-  section.restaurants .content .form__rest {
+  .restaurants .content .form__rest {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
