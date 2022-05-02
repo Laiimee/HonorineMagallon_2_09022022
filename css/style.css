@@ -475,15 +475,15 @@ span {
     bottom: 0;
   }
 }
-.slice.menu .form__meal .meal ul li:hover, .slice.menu .form__meal .meal ul li :focus {
+.slice.menu .form__meal .meal ul li:hover {
   padding-right: 50px;
 }
-.slice.menu .form__meal .meal ul li:hover .check__hidden, .slice.menu .form__meal .meal ul li :focus .check__hidden {
+.slice.menu .form__meal .meal ul li:hover .check__hidden {
   opacity: 1;
   transform: translate(-50px);
   transform: scale(1);
 }
-.slice.menu .form__meal .meal ul li:hover .fa-check-circle, .slice.menu .form__meal .meal ul li :focus .fa-check-circle {
+.slice.menu .form__meal .meal ul li:hover .fa-check-circle {
   animation: check_rotating 0.4s linear;
 }
 @keyframes check_rotating {
